@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Professores | Gracie Barra Vila Leopoldina</title>
+  <meta name="description" content="Conheça os professores da Gracie Barra Vila Leopoldina: Jiu-Jitsu adulto, GB Feminino, GB Kids e Juniores e Judô.">
+  <meta name="theme-color" content="#0d0d0d">
+  <link rel="icon" href="img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="header header--solid">
+    <div class="container">
+      <a href="index.html" class="logo" aria-label="Gracie Barra Vila Leopoldina — início">
+        <img src="img/logo.png" alt="">
+        <span class="logo-text"><strong>Gracie Barra</strong><span>Vila Leopoldina</span></span>
+      </a>
+
+      <nav class="nav" aria-label="Menu principal">
+        <a href="index.html#modalidades">Modalidades</a>
+        <a href="index.html#horarios">Horários</a>
+        <a href="index.html#mensalidades">Mensalidades</a>
+        <a href="professores.html" class="is-active" aria-current="page">Professores</a>
+        <a href="index.html#localizacao">Contato</a>
+        <a href="#" class="btn btn--red" data-wa="Olá! Gostaria de agendar uma aula experimental.">Agende sua aula</a>
+      </nav>
+
+      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false"><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================= TÍTULO ================= -->
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Nossa equipe</span>
+        <h1>Professores</h1>
+        <p>Profissionais graduados pela Gracie Barra, comprometidos com a evolução de cada aluno, do primeiro treino à faixa preta.</p>
+        <div class="breadcrumb"><a href="index.html">Início</a> &nbsp;/&nbsp; Professores</div>
+      </div>
+    </section>
+
+    <!-- ================= LISTA ================= -->
+    <section class="section">
+      <div class="container">
+
+        <div class="team-filter" role="toolbar" aria-label="Filtrar por modalidade">
+          <button class="tab is-active" data-filter="todos">Todos</button>
+          <button class="tab" data-filter="jiu-jitsu">Jiu-Jitsu</button>
+          <button class="tab" data-filter="feminino">Feminino</button>
+          <button class="tab" data-filter="kids">Kids e Juniores</button>
+          <button class="tab" data-filter="judo">Judô</button>
+        </div>
+
+        <!--
+          Para cada professor:
+          - Foto em img/professores/. O enquadramento é ajustado por style="--pos: X% Y%" na .foto.
+          - data-modalidades: usado pelo filtro (jiu-jitsu, feminino, kids, judo).
+          - Faixa: belt--preta | belt--marrom | belt--roxa | belt--azul | belt--judo (sem ponteira; cada <b> é um Dan, em vermelho).
+            Fica em .teacher-belt, abaixo dos destaques. Cada <b> dentro do <i> é um grau.
+          - "teacher--reverse" coloca a foto à direita.
+        -->
+        <div class="team-list">
+
+          <!-- Danilo -->
+          <article class="teacher" id="danilo" data-modalidades="jiu-jitsu kids">
+            <div class="teacher-photo">
+              <div class="foto" style="--pos: 50% 20%">
+                <img src="img/professores/danilo.webp" alt="Professor Danilo de kimono branco e faixa preta" onerror="this.remove()">
+                <span class="foto-placeholder">D</span>
+              </div>
+            </div>
+            <div class="teacher-body">
+              <span class="role">Fundador · Professor titular</span>
+              <h2>Professor Danilo</h2>
+              <div class="teacher-tags">
+                <span>Faixa preta</span>
+                <span>Jiu-Jitsu Adulto</span>
+                <span>De segunda a sexta</span>
+              </div>
+              <p>Foi o Danilo quem trouxe a Gracie Barra para a Vila Leopoldina. Começou no Jiu-Jitsu em 2013 e recebeu a faixa preta em junho de 2024. Professor de Educação Física, une o currículo oficial Gracie Barra ao conhecimento de treino e preparação do corpo, para que cada aluno evolua com técnica e segurança.</p>
+              <p>Está no tatame de segunda a sexta: às segundas, quartas e sextas, do primeiro ao último treino do dia, e às terças e quintas, na turma das 20h.</p>
+              <div class="teacher-facts">
+                <div><strong>2013</strong><span>Início no Jiu-Jitsu</span></div>
+                <div><strong>2024</strong><span>Faixa preta</span></div>
+                <div><strong>Ed. Física</strong><span>Professor formado</span></div>
+              </div>
+              <div class="teacher-belt">
+                <div class="teacher-belt-label"><small>Graduação</small><strong>Faixa preta</strong></div>
+                <div class="belt belt--preta"><i></i></div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Camila -->
+          <article class="teacher teacher--reverse" id="camila" data-modalidades="jiu-jitsu feminino kids">
+            <div class="teacher-photo">
+              <div class="foto" style="--pos: 50% 0%">
+                <img src="img/professores/camila.png" alt="Professora Camila em posição de luta durante campeonato" onerror="this.remove()">
+                <span class="foto-placeholder">C</span>
+              </div>
+            </div>
+            <div class="teacher-body">
+              <span class="role">Professora · GB Feminino e GB Kids</span>
+              <h2>Professora Camila</h2>
+              <div class="teacher-tags">
+                <span>Faixa preta</span>
+                <span>Jiu-Jitsu Feminino</span>
+                <span>GB Kids</span>
+              </div>
+              <p>A Camila começou sua jornada no Jiu-Jitsu em 2013 e conquistou a faixa preta em janeiro de 2024. Hoje comanda as aulas do GB Feminino, um espaço pensado para que as mulheres treinem com segurança e no seu ritmo, e também faz parte da equipe do GB Kids.</p>
+              <p>Nas aulas, o foco vai além da técnica: autoconfiança, defesa pessoal e uma turma que se apoia dentro e fora do tatame. Com as crianças, ensina disciplina e respeito de um jeito leve e divertido.</p>
+              <div class="teacher-facts">
+                <div><strong>2013</strong><span>Início no Jiu-Jitsu</span></div>
+                <div><strong>2024</strong><span>Faixa preta</span></div>
+                <div><strong>GB Feminino</strong><span>Seg, qua e sex às 19h</span></div>
+              </div>
+              <div class="teacher-belt">
+                <div class="teacher-belt-label"><small>Graduação</small><strong>Faixa preta</strong></div>
+                <div class="belt belt--preta"><i></i></div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Fernando -->
+          <article class="teacher" id="fernando" data-modalidades="jiu-jitsu">
+            <div class="teacher-photo">
+              <div class="foto" style="--pos: 50% 0%">
+                <img src="img/professores/fernando.png" alt="Professor Fernando Nobre sentado no tatame" onerror="this.remove()">
+                <span class="foto-placeholder">F</span>
+              </div>
+            </div>
+            <div class="teacher-body">
+              <span class="role">Professor · Turmas da manhã</span>
+              <h2>Professor Fernando </h2>
+              <div class="teacher-tags">
+                <span>Faixa preta</span>
+                <span>Jiu-Jitsu Adulto</span>
+                <span>25 anos de tatame</span>
+              </div>
+              <p>Fernando treina Jiu-Jitsu desde 2001: são mais de duas décadas de tatame. Em 2026, foi graduado faixa preta pelo professor Rodrigo Cardoso.</p>
+              <p>É quem comanda as aulas de terça e quinta às 7h, para quem gosta de começar o dia treinando.</p>
+              <div class="teacher-facts">
+                <div><strong>2001</strong><span>Início no Jiu-Jitsu</span></div>
+                <div><strong>2026</strong><span>Faixa preta</span></div>
+                <div><strong>Ter · Qui</strong><span>Turma das 7h</span></div>
+              </div>
+              <div class="teacher-belt">
+                <div class="teacher-belt-label"><small>Graduação</small><strong>Faixa preta</strong></div>
+                <div class="belt belt--preta"><i></i></div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Hyago -->
+          <article class="teacher teacher--reverse" id="hyago" data-modalidades="jiu-jitsu">
+            <div class="teacher-photo">
+              <div class="foto" style="--pos: 50% 6%">
+                <img src="img/professores/hyago.png" alt="Professor Hyago sorrindo de kimono branco e faixa preta" onerror="this.remove()">
+                <span class="foto-placeholder">H</span>
+              </div>
+            </div>
+            <div class="teacher-body">
+              <span class="role">Professor · Turmas da noite</span>
+              <h2>Professor Hyago</h2>
+              <div class="teacher-tags">
+                <span>Faixa preta</span>
+                <span>GB1 e GB2</span>
+                <span>Desde 2013</span>
+              </div>
+              <p>Hyago começou nas artes marciais em 2013 pelo Muay Thai e, no mesmo ano, encontrou no Jiu-Jitsu a sua arte. Em 2024, foi graduado faixa preta pelo sensei Henrique Machado.</p>
+              <p>Auxilia o professor Danilo nas turmas das 20h e 21h, acompanhando de perto a evolução de iniciantes (GB1) e intermediários (GB2).</p>
+              <div class="teacher-facts">
+                <div><strong>2013</strong><span>Início nas artes marciais</span></div>
+                <div><strong>2024</strong><span>Faixa preta</span></div>
+                <div><strong>20h · 21h</strong><span>GB1 e GB2</span></div>
+              </div>
+              <div class="teacher-belt">
+                <div class="teacher-belt-label"><small>Graduação</small><strong>Faixa preta</strong></div>
+                <div class="belt belt--preta"><i></i></div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Daniel -->
+          <article class="teacher" id="daniel" data-modalidades="judo">
+            <div class="teacher-photo">
+              <div class="foto" style="--pos: 50% 12%">
+                <img src="img/professores/daniel.webp" alt="Professor Daniel de kimono azul no tatame" onerror="this.remove()">
+                <span class="foto-placeholder">D</span>
+              </div>
+            </div>
+            <div class="teacher-body">
+              <span class="role">Sensei · Judô</span>
+              <h2>SENSEI Daniel</h2>
+              <div class="teacher-tags">
+                <span>Faixa preta de Judô · 1º Dan</span>
+                <span>Quedas e projeções</span>
+                <span>Preparação para campeonatos</span>
+              </div>
+              <p>Daniel tem mais de 20 anos de Judô e é faixa preta 1º Dan desde 2024. Em 2025, começou também no Jiu-Jitsu e trouxe para a equipe toda a sua bagagem no jogo em pé.</p>
+              <p>Desde então, ajuda os alunos na preparação para campeonatos, com quedas, projeções e ajustes de postura em pé.</p>
+              <ul class="teacher-titles" aria-label="Principais conquistas">
+                <li><span><strong>Campeão</strong> SP Open (CBJJE)</span></li>
+                <li><span><strong>Campeão</strong> Sul-Americano (CBJJE)</span></li>
+                <li><span><strong>Vice-campeão</strong> Compnet</span></li>
+              </ul>
+              <div class="teacher-facts">
+                <div><strong>20+</strong><span>Anos de Judô</span></div>
+                <div><strong>2024</strong><span>Faixa preta de Judô · 1º Dan</span></div>
+                <div><strong>2025</strong><span>Início no Jiu-Jitsu</span></div>
+              </div>
+              <div class="teacher-belt">
+                <div class="teacher-belt-label"><small>Graduação · Judô</small><strong>Faixa preta · 1º Dan</strong></div>
+                <div class="belt belt--judo"><b></b></div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Lucas Dias -->
+          <article class="teacher teacher--reverse" id="lucas" data-modalidades="kids">
+            <div class="teacher-photo">
+              <div class="foto" style="--pos: 50% 3%">
+                <img src="img/professores/lucas.png" alt="Instrutor Lucas Dias de kimono branco e faixa azul" onerror="this.remove()">
+                <span class="foto-placeholder">L</span>
+              </div>
+            </div>
+            <div class="teacher-body">
+              <span class="role">Instrutor · GB Juniores</span>
+              <h2>Lucas Dias</h2>
+              <div class="teacher-tags">
+                <span>Instrutor</span>
+                <span>GB Juniores</span>
+                <span>Competidor</span>
+              </div>
+              <p>Lucas começou no Jiu-Jitsu em 2023 e logo se destacou nas competições. Hoje é o instrutor responsável pelo treino dos Juniores, às terças e quintas, às 17h, levando para os mais novos a disciplina de quem vive o esporte.</p>
+              <ul class="teacher-titles" aria-label="Principais conquistas">
+                <li><span><strong>Campeão</strong> Sul-Americano (CBJJE)</span></li>
+                <li><span><strong>Campeão</strong> Compnet</span></li>
+                <li><span><strong>Campeão</strong> Paulista (FPJJ)</span></li>
+                <li><span><strong>Vice-campeão</strong> Mundial No-Gi (CBJJE)</span></li>
+                <li><span><strong>Vice-campeão</strong> Copa Grandes Mestres (FPJJ)</span></li>
+                <li><span><strong>3º lugar</strong> Campeonato Mundial (CBJJE)</span></li>
+              </ul>
+              <div class="teacher-facts">
+                <div><strong>2023</strong><span>Início no Jiu-Jitsu</span></div>
+                <div><strong>6</strong><span>Pódios em destaque</span></div>
+                <div><strong>Ter · Qui</strong><span>Juniores às 17h</span></div>
+              </div>
+              <div class="teacher-belt">
+                <div class="teacher-belt-label"><small>Graduação</small><strong>Faixa azul · 4 graus</strong></div>
+                <div class="belt belt--azul"><i><b></b><b></b><b></b><b></b></i></div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CTA ================= -->
+    <section class="cta">
+      <div class="container">
+        <h2>Treine com a nossa equipe</h2>
+        <p>Agende uma aula experimental gratuita e conheça os professores de perto.</p>
+        <a href="#" class="btn btn--whatsapp" data-wa="Olá! Quero agendar minha aula experimental gratuita.">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2a9.9 9.9 0 00-8.46 15.05L2.5 21.5l4.58-1.06A9.9 9.9 0 1012.04 2zm5.8 14.03c-.25.7-1.45 1.33-2 1.4-.52.08-1.17.11-1.89-.12a17 17 0 01-1.71-.63c-3-1.3-4.97-4.33-5.12-4.53-.15-.2-1.22-1.62-1.22-3.1 0-1.47.77-2.2 1.05-2.5.27-.3.6-.37.8-.37h.57c.18 0 .43-.07.67.51.25.6.85 2.07.92 2.22.08.15.13.32.03.52-.1.2-.15.33-.3.5-.15.18-.31.39-.45.52-.15.15-.3.31-.13.61.18.3.78 1.29 1.67 2.08 1.15 1.03 2.12 1.35 2.42 1.5.3.15.47.12.65-.08.17-.2.75-.87.95-1.17.2-.3.4-.25.67-.15.28.1 1.75.83 2.05.98.3.15.5.22.57.35.08.12.08.72-.17 1.42z"/></svg>
+          Chamar no WhatsApp
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="index.html" class="logo">
+            <img src="img/logo.png" alt="">
+            <span class="logo-text"><strong>Gracie Barra</strong><span>Vila Leopoldina</span></span>
+          </a>
+          <p>Jiu-Jitsu para famílias. Fraternidade, integridade e desenvolvimento.</p>
+          <div class="social">
+            <a href="https://www.instagram.com/graciebarravilaleopoldina/" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="index.html#modalidades">Modalidades</a></li>
+            <li><a href="index.html#horarios">Horários</a></li>
+            <li><a href="index.html#mensalidades">Mensalidades</a></li>
+            <li><a href="professores.html">Professores</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Modalidades</h4>
+          <ul>
+            <li>Jiu-Jitsu Adulto</li>
+            <li>GB Kids e Juniores</li>
+            <li>GB Feminino</li>
+            <li>Judô · Treino Funcional</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contato</h4>
+          <ul>
+            <li>Av. Imperatriz Leopoldina, 265</li>
+            <li>Vila Leopoldina · São Paulo</li>
+            <li><a href="#" data-wa="Olá!">(11) 97074-1081</a></li>
+            <li><a href="https://www.instagram.com/graciebarravilaleopoldina/" target="_blank" rel="noopener">@graciebarravilaleopoldina</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> Gracie Barra Vila Leopoldina. Todos os direitos reservados.</span>
+        <span>CNPJ 57.913.701/0001-39</span>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="wa-float" data-wa="Olá! Gostaria de agendar uma aula experimental." aria-label="Fale conosco no WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2a9.9 9.9 0 00-8.46 15.05L2.5 21.5l4.58-1.06A9.9 9.9 0 1012.04 2zm5.8 14.03c-.25.7-1.45 1.33-2 1.4-.52.08-1.17.11-1.89-.12a17 17 0 01-1.71-.63c-3-1.3-4.97-4.33-5.12-4.53-.15-.2-1.22-1.62-1.22-3.1 0-1.47.77-2.2 1.05-2.5.27-.3.6-.37.8-.37h.57c.18 0 .43-.07.67.51.25.6.85 2.07.92 2.22.08.15.13.32.03.52-.1.2-.15.33-.3.5-.15.18-.31.39-.45.52-.15.15-.3.31-.13.61.18.3.78 1.29 1.67 2.08 1.15 1.03 2.12 1.35 2.42 1.5.3.15.47.12.65-.08.17-.2.75-.87.95-1.17.2-.3.4-.25.67-.15.28.1 1.75.83 2.05.98.3.15.5.22.57.35.08.12.08.72-.17 1.42z"/></svg>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
