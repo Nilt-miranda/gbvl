@@ -665,6 +665,92 @@ p { margin: 0; }
   color: var(--gray-700);
 }
 .plans-info strong { color: var(--ink); }
+
+/* Tabela de planos (computador); no celular entram as abas com cards (.plans-mobile) */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+.plans-mobile { display: none; }
+.price-table-wrap { max-width: 1040px; margin: 0 auto; }
+.price-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+.price-table thead th {
+  padding: 20px 12px 16px;
+  vertical-align: bottom;
+  font-family: var(--font-head);
+  font-size: 21px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-bottom: 3px solid var(--red);
+}
+.price-table thead th.is-best { background: var(--black); color: var(--white); }
+.price-table th .plan-flag {
+  position: static;
+  transform: none;
+  display: block;
+  width: max-content;
+  margin: 0 auto 8px;
+  padding: 4px 12px;
+  font-size: 12px;
+}
+.price-table tbody th {
+  width: 27%;
+  padding: 18px 24px;
+  text-align: left;
+  border-bottom: 1px solid var(--gray-200);
+}
+.price-table tbody th strong {
+  display: block;
+  font-family: var(--font-head);
+  font-size: 25px;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+.price-table tbody th span { font-size: 13px; font-weight: 400; color: var(--gray-500); }
+.price-table td {
+  padding: 0;
+  text-align: center;
+  border-bottom: 1px solid var(--gray-200);
+}
+.price-table td.is-best { background: var(--black); border-bottom-color: #262626; }
+.price-table tbody tr:last-child th,
+.price-table tbody tr:last-child td { border-bottom: 0; }
+.price-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 18px 8px;
+  color: var(--ink);
+  transition: background .2s;
+}
+.price-cell:hover { background: rgba(215, 38, 30, .08); }
+.is-best .price-cell { color: var(--white); }
+.is-best .price-cell:hover { background: #222; }
+.pc-value {
+  font-family: var(--font-head);
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 1;
+  white-space: nowrap;
+}
+.pc-value em { font-style: normal; font-size: 16px; margin-right: 3px; vertical-align: 12px; }
+.pc-value b { font-size: 19px; }
+.pc-month { font-size: 12px; color: var(--gray-500); }
+.price-cell small { margin-top: 4px; font-size: 11.5px; font-weight: 600; color: var(--red); }
+.is-best .price-cell small { color: #ff7a73; }
+.price-table-hint { margin-top: 14px; text-align: center; font-size: 13px; color: var(--gray-500); }
 .plan-kicker {
   font-family: var(--font-head);
   font-weight: 600;
@@ -1087,6 +1173,8 @@ p { margin: 0; }
   .highlight:nth-child(-n + 2) { border-bottom: 1px solid rgba(255, 255, 255, .2); }
 
   .split { grid-template-columns: 1fr; }
+  .price-table-wrap { display: none; }
+  .plans-mobile { display: block; }
   .split-media { aspect-ratio: 16 / 11; }
   .location { grid-template-columns: 1fr; }
 
