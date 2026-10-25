@@ -14,6 +14,9 @@
   --gray-100: #f4f4f4;
   --white: #fff;
   --whatsapp: #25d366;
+  --gold: #f2b705;
+  --silver: #a8adb3;
+  --bronze: #d9772b;
 
   --font-head: "Barlow Condensed", "Arial Narrow", sans-serif;
   --font-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
@@ -771,6 +774,150 @@ p { margin: 0; }
 .price-tbd span { font-size: 13px; color: var(--gray-500); }
 .plan--featured .price-tbd span { color: #a9a9a9; }
 
+/* ---------- Conquistas (medalhas do Smoothcomp) ---------- */
+.medals {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 32px;
+  align-items: stretch;
+}
+.medals-total {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 26px;
+  padding: 40px 28px;
+  background: var(--black);
+  color: var(--white);
+  border-radius: var(--radius);
+}
+.medals-ring { position: relative; width: 220px; height: 220px; }
+.medals-ring svg { width: 100%; height: 100%; }
+.arc--gold { stroke: var(--gold); }
+.arc--silver { stroke: var(--silver); }
+.arc--bronze { stroke: var(--bronze); }
+.medals-count {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.medals-count strong {
+  font-family: var(--font-head);
+  font-weight: 800;
+  font-size: 72px;
+  line-height: .9;
+}
+.medals-count span {
+  font-size: 13px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #a9a9a9;
+}
+.medals-split { display: flex; justify-content: center; gap: 26px; }
+.medal-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #a9a9a9;
+}
+
+/* Medalha desenhada (símbolo #medalha): fita vermelha + disco com o número */
+.svg-sprite { position: absolute; width: 0; height: 0; overflow: hidden; }
+.medalha {
+  --fita-1: var(--red);
+  --fita-2: #9e1a13;
+  position: relative;
+  display: inline-block;
+  flex-shrink: 0;
+  width: 36px;
+  height: 47px;
+}
+.medalha svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0 2px 2px rgba(0, 0, 0, .2));
+}
+/* número centralizado no disco (o disco ocupa de 33% a 98% da altura) */
+.medalha b {
+  position: absolute;
+  inset: 40% 0 6% 0;
+  display: grid;
+  place-items: center;
+  font-family: var(--font-head);
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 1;
+}
+.medalha--ouro { --aro: #c58a00; --face: #ffd23f; color: #4a3500; }
+.medalha--prata { --aro: #848c95; --face: #e4e8ec; color: #2d3338; }
+.medalha--bronze { --aro: #a0521a; --face: #eb985a; color: #45200a; }
+.medalha--lg { width: 58px; height: 75px; }
+.medalha--lg b { font-size: 25px; }
+
+.medals-events {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 32px 24px;
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius);
+}
+.medals-events h3 { font-size: 24px; margin-bottom: 8px; }
+.events { list-style: none; padding: 0; margin: 0; flex: 1; }
+.event {
+  display: grid;
+  grid-template-columns: 64px 1fr auto;
+  align-items: center;
+  gap: 18px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--gray-200);
+}
+.event:last-child { border-bottom: 0; }
+.event time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6px 0;
+  border-radius: 8px;
+  background: var(--gray-100);
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--gray-500);
+  line-height: 1.2;
+}
+.event time b {
+  font-family: var(--font-head);
+  font-size: 24px;
+  color: var(--ink);
+  line-height: 1;
+}
+.event-info strong { display: block; font-weight: 600; line-height: 1.3; }
+.event-info span { font-size: 13px; color: var(--gray-500); }
+.event-medals { display: flex; gap: 8px; }
+.medals-foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  margin-top: 14px;
+  padding-top: 16px;
+  border-top: 1px solid var(--gray-200);
+  font-size: 13px;
+}
+.medals-updated { color: var(--gray-500); }
+.medals-link { font-weight: 600; color: var(--red); }
+.medals-link:hover { text-decoration: underline; }
+
 /* ---------- Teaser professores (home) ---------- */
 .team-teaser {
   display: grid;
@@ -1173,6 +1320,7 @@ p { margin: 0; }
   .highlight:nth-child(-n + 2) { border-bottom: 1px solid rgba(255, 255, 255, .2); }
 
   .split { grid-template-columns: 1fr; }
+  .medals { grid-template-columns: 1fr; }
   .price-table-wrap { display: none; }
   .plans-mobile { display: block; }
   .split-media { aspect-ratio: 16 / 11; }
@@ -1192,6 +1340,13 @@ p { margin: 0; }
   .gb b { font-size: 19px; }
   .gb i { width: 19px; height: 19px; font-size: 13px; }
   .teacher-titles { grid-template-columns: 1fr; }
+  .medals-events { padding: 24px 18px 20px; }
+  .event { grid-template-columns: 54px 1fr; gap: 6px 14px; }
+  .event time { grid-row: span 2; }
+  .event-medals { grid-column: 2; }
+  .medalha--lg { width: 50px; height: 65px; }
+  .medalha--lg b { font-size: 22px; }
+  .medals-split { gap: 18px; }
   .team-teaser { grid-template-columns: repeat(2, 1fr); }
   .plans--4 { grid-template-columns: 1fr; max-width: 480px; }
   .values { grid-template-columns: 1fr; }
