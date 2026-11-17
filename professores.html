@@ -36,6 +36,17 @@
   </header>
 
   <main>
+    <!-- Desenho da medalha (fita + disco), reutilizado em todas as medalhas da página -->
+    <svg class="svg-sprite" aria-hidden="true">
+      <symbol id="medalha" viewBox="0 0 40 52">
+        <path d="M8 0h10l6 21H14z" style="fill: var(--fita-1)"/>
+        <path d="M22 0h10l-6 21H16z" style="fill: var(--fita-2)"/>
+        <circle cx="20" cy="34" r="17" style="fill: var(--aro)"/>
+        <circle cx="20" cy="34" r="13" style="fill: var(--face)"/>
+        <path d="M11.5 29.5a9.5 9.5 0 0 1 7.5-6.4" fill="none" stroke="#fff" stroke-opacity=".6" stroke-width="2" stroke-linecap="round"/>
+      </symbol>
+    </svg>
+
     <!-- ================= TÍTULO ================= -->
     <section class="page-hero">
       <div class="container">
@@ -122,7 +133,7 @@
               </div>
               <div class="teacher-belt">
                 <div class="teacher-belt-label"><small>Graduação</small><strong>Faixa preta · 1 grau</strong></div>
-                <div class="belt belt--preta belt--camila" role="img" aria-label="Faixa preta com dois graus"><i><b></b></i><span class="belt-end" aria-hidden="true"></span></div>
+                <div class="belt belt--preta belt--camila" role="img" aria-label="Faixa preta com um grau"><i><b></b></i><span class="belt-end" aria-hidden="true"></span></div>
               </div>
             </div>
           </article>
@@ -145,6 +156,10 @@
               </div>
               <p>Fernando treina Jiu-Jitsu desde 2001: são mais de duas décadas de tatame. Em 2026, foi graduado faixa preta pelo professor Rodrigo Cardoso.</p>
               <p>É quem comanda as aulas de terça e quinta às 7h, para quem gosta de começar o dia treinando.</p>
+              <ul class="teacher-titles" aria-label="Principais conquistas">
+                <li><span class="medalha medalha--ouro medalha--sm" role="img" aria-label="Ouro"><svg aria-hidden="true"><use href="#medalha"/></svg></span><span><strong>Campeão</strong> CompNet de Verão Campinas 2026</span></li>
+                <li><span class="medalha medalha--bronze medalha--sm" role="img" aria-label="Bronze"><svg aria-hidden="true"><use href="#medalha"/></svg></span><span><strong>3º lugar</strong> Brasileiro CompNet 2026</span></li>
+              </ul>
               <div class="teacher-facts">
                 <div><strong>2001</strong><span>Início no Jiu-Jitsu</span></div>
                 <div><strong>2026</strong><span>Faixa preta</span></div>
@@ -173,12 +188,17 @@
                 <span>GB1 e GB2</span>
                 <span>Competidor</span>
               </div>
-              <p>Hyago começou nas artes marciais em 2013 pelo Muay Thai e, no mesmo ano, encontrou no Jiu-Jitsu a sua arte. Em 2024, foi graduado faixa preta pelo sensei Henrique Machado.</p>
+              <p>A história do Hyago nas artes marciais começou no Judô, ainda criança, onde chegou à faixa roxa. Em 2009, treinou Jiu-Jitsu pela primeira vez e passou pelas equipes Monteiro e Nova União antes de chegar à Gracie Barra, em 2014, onde está desde então. Em 2024, foi graduado faixa preta pelo sensei Henrique Machado.</p>
               <p>Auxilia o professor Danilo nas turmas das 20h e 21h, acompanhando de perto a evolução de iniciantes (GB1) e intermediários (GB2).</p>
+              <ul class="teacher-titles" aria-label="Principais conquistas">
+                <li><span class="medalha medalha--ouro medalha--sm" role="img" aria-label="Ouro"><svg aria-hidden="true"><use href="#medalha"/></svg></span><span><strong>Campeão</strong> Amazonense (FJJAM)</span></li>
+                <li><span class="medalha medalha--ouro medalha--sm" role="img" aria-label="Ouro"><svg aria-hidden="true"><use href="#medalha"/></svg></span><span><strong>Campeão</strong> Copa Arthur Neto (FJJAM)</span></li>
+                <li><span class="medalha medalha--prata medalha--sm" role="img" aria-label="Prata"><svg aria-hidden="true"><use href="#medalha"/></svg></span><span><strong>Vice-campeão</strong> Manaus Open (CBJJ)</span></li>
+              </ul>
               <div class="teacher-facts">
-                <div><strong>2013</strong><span>Início nas artes marciais</span></div>
+                <div><strong>2009</strong><span>Início no Jiu-Jitsu</span></div>
+                <div><strong>2014</strong><span>Na Gracie Barra</span></div>
                 <div><strong>2024</strong><span>Faixa preta</span></div>
-                <div><strong>20h · 21h</strong><span>GB1 e GB2</span></div>
               </div>
               <div class="teacher-belt">
                 <div class="teacher-belt-label"><small>Graduação</small><strong>Faixa preta</strong></div>
@@ -206,9 +226,9 @@
               <p>Daniel tem mais de 20 anos de Judô e é faixa preta 1º Dan desde 2024. Em 2025, começou no Jiu-Jitsu e trouxe para a equipe toda a sua bagagem no jogo em pé.</p>
               <p>Desde então, ajuda os alunos na preparação para campeonatos, com quedas, projeções e ajustes de postura em pé.</p>
               <ul class="teacher-titles" aria-label="Principais conquistas">
-                <li><span><strong>Campeão</strong> SP Open (CBJJE)</span></li>
-                <li><span><strong>Campeão</strong> Sul-Americano (CBJJE)</span></li>
-                <li><span><strong>Vice-campeão</strong> Compnet</span></li>
+                <li><span class="medalha medalha--ouro medalha--sm" role="img" aria-label="Ouro"><svg aria-hidden="true"><use href="#medalha"/></svg></span><span><strong>Campeão</strong> SP Open (CBJJE)</span></li>
+                <li><span class="medalha medalha--ouro medalha--sm" role="img" aria-label="Ouro"><svg aria-hidden="true"><use href="#medalha"/></svg></span><span><strong>Campeão</strong> Sul-Americano (CBJJE)</span></li>
+                <li><span class="medalha medalha--prata medalha--sm" role="img" aria-label="Prata"><svg aria-hidden="true"><use href="#medalha"/></svg></span><span><strong>Vice-campeão</strong> Compnet</span></li>
               </ul>
               <div class="teacher-facts">
                 <div><strong>20+</strong><span>Anos de Judô</span></div>
@@ -240,12 +260,12 @@
               </div>
               <p>Lucas começou no Jiu-Jitsu em 2023 e logo se destacou nas competições. Hoje é o instrutor responsável pelo treino dos Juniores, às terças e quintas, às 17h, levando para os mais novos a disciplina de quem vive o esporte.</p>
               <ul class="teacher-titles" aria-label="Principais conquistas">
-                <li><span><strong>Campeão</strong> Sul-Americano (CBJJE)</span></li>
-                <li><span><strong>Campeão</strong> Paulista (FPJJ)</span></li>
-                <li><span><strong>Vice-campeão</strong> Mundial No-Gi (CBJJE)</span></li>
-                <li><span><strong>Vice-campeão</strong> Copa Grandes Mestres (FPJJ)</span></li>
-                <li><span><strong>3º lugar</strong> Campeonato Mundial (CBJJE)</span></li>
-                <li><span><strong>3º lugar</strong> Compnet (x2)</span></li>
+                <li><span class="medalha medalha--ouro medalha--sm" role="img" aria-label="Ouro"><svg aria-hidden="true"><use href="#medalha"/></svg></span><span><strong>Campeão</strong> Sul-Americano (CBJJE)</span></li>
+                <li><span class="medalha medalha--ouro medalha--sm" role="img" aria-label="Ouro"><svg aria-hidden="true"><use href="#medalha"/></svg></span><span><strong>Campeão</strong> Paulista (FPJJ)</span></li>
+                <li><span class="medalha medalha--prata medalha--sm" role="img" aria-label="Prata"><svg aria-hidden="true"><use href="#medalha"/></svg></span><span><strong>Vice-campeão</strong> Mundial No-Gi (CBJJE)</span></li>
+                <li><span class="medalha medalha--prata medalha--sm" role="img" aria-label="Prata"><svg aria-hidden="true"><use href="#medalha"/></svg></span><span><strong>Vice-campeão</strong> Copa Grandes Mestres (FPJJ)</span></li>
+                <li><span class="medalha medalha--bronze medalha--sm" role="img" aria-label="Bronze"><svg aria-hidden="true"><use href="#medalha"/></svg></span><span><strong>3º lugar</strong> Campeonato Mundial (CBJJE)</span></li>
+                <li><span class="medalha medalha--bronze medalha--sm" role="img" aria-label="Bronze"><svg aria-hidden="true"><use href="#medalha"/></svg></span><span><strong>3º lugar</strong> Compnet (x2)</span></li>
               </ul>
               <div class="teacher-facts">
                 <div><strong>2023</strong><span>Início no Jiu-Jitsu</span></div>

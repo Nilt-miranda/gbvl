@@ -59,13 +59,14 @@
 
     <!--
       Dados do perfil da academia no Smoothcomp (https://smoothcomp.com/pt_BR/club/73674).
-      Para atualizar: totais (anel e medalhas grandes), lista de eventos e a data em .medals-updated.
+      O js/main.js atualiza esta seção sozinho ao abrir a página (data-smoothcomp = id da academia).
+      Os números abaixo são o retrato atual e aparecem se o Smoothcomp não responder; vale atualizá-los de vez em quando.
       Arcos do anel: circunferência 502.65 (r=80); cada arco = total da cor / total geral × 502.65,
       menos 14 de espaço (por causa das pontas arredondadas).
     -->
     <section class="section">
       <div class="container">
-        <div class="medals">
+        <div class="medals" data-smoothcomp="73674">
           <div class="medals-total">
             <div class="medals-ring">
               <svg viewBox="0 0 200 200" aria-hidden="true">
